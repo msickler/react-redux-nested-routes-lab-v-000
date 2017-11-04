@@ -13,10 +13,10 @@ class PetsPage extends Component {
   }
 
   render() {
-    const PetsPage = ({ match, pets }) => 
+    const PetsPage = ({ match, pets }) =>
     <div>
       <PetsList pets={pets}/>
-      <Switch> 
+      <Switch>
         <Route path={`${match.url}/pets/new`} component={PetsNew} />
         <Route path={`${match.url}/pets/:petId`} component={PetsShow} />
         <Route exact path={match.url} render={() => (
@@ -34,7 +34,7 @@ class PetsPage extends Component {
         <div>{PetsPage}</div>
       </div>
     )
-  
+
   };
 
 const mapStateToProps = state => {
