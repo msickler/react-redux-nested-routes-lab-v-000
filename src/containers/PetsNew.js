@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { addPet } from '../actions';
 
 class PetsNew extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: '',
       description: '',
